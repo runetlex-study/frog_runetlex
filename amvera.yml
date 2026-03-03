@@ -5,4 +5,4 @@ meta:
     name: pip
 run:
   containerPort: 8000
-  command: sh -c "pip install -r /app/requirements.txt && uvicorn main:app --host 0.0.0.0 --port 8000"
+  command: uvicorn main:app --host 0.0.0.0 --port 8000
